@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+             padding: 0;
+             margin: 0;
+        }
+        body {
+            background-image: url(bg1.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        
+        }
+
+        .sam {
+              width:80%;    
+              height: 5vh;
+              border-radius: 10px;
+              margin: 5px;
+              outline: none;
+              border: none;
+              padding-left: 15px;
+              background-color:#00000023;
+              border-bottom: 5px transparent;
+        } 
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:80vh;
+        width:25vw;
+        gap:0.3rem;
+    }
+    .cont{
+        height:59vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 1rem;
+       
+    }
+    h3{
+        font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .saam {
+        background-color: rgb(70, 56, 220);
+        width:40%;
+        cursor: pointer;
+    }
+    .saam:hover {
+        background-color: rgb(82, 98, 177);
+    }
+    .shadow {
+        box-shadow:
+        2.8px 2.8px 3.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+    }
+
+    input:focus{
+        border-bottom: 2px solid green;  
+     }
+    </style>
+</head>
+<body>
+    <div class="cont shadow" style="background-color: rgba(255, 255, 255, 0.515);">
+        <h3>Register</h3>
+        <form class="asd" onsubmit="register()">
+           
+            <input type="text" name="name" id="name" placeholder="username" class="sam">
+           
+            <input type="email" name="email" id="email" placeholder="email address" class="sam">
+           
+            <input type="number" name="phone" id="mobile" placeholder="mobile" class="sam">
+      
+            <input type="date" name="dob" id="dob" class="sam">
+      
+            <input type="password" name="pass" id="pass" placeholder="password" class="sam">
+            <input type="password" name="pass1" id="pass1" placeholder="confirm password" class="sam">
+
+            <input type="submit" value="submit" class="sam saam"></form>
+        </form>
+    </div>
+</body> 
+<script>
+    function register(){
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let num = document.getElementById("mobile").value;
+        let Dob = document.getElementById("dob").value;
+        let pass = document.getElementById("pass").value;
+        let pass1 = document.getElementById("pass1").value;
+        
+    if(confirm("yes"))
+    {
+        if(pass === pass1)
+        {
+        alert(
+            "password matched"+"\n"+
+             "Name: "+name+"\n"+
+             "Email: "+email+"\n"+
+             "Mobile: "+num+"\n"+
+             "DOB: "+Dob+"\n"+
+             "Password: "+pass+"\n"
+        );
+        }
+        else{
+            alert("password mismatch");
+        }
+    }
+    else
+    {
+          alert("failed");                     
+    }
+    }
+</script>
+</html>

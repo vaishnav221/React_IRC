@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="t.css">
+    <title>TEST</title>
+    <style>
+        /* Centering content */
+    </style>
+</head>
+<body>
+    <div class="center-content"> 
+        <h3>REGISTRATION</h3>
+    </div>
+    <form class="container" onsubmit="handleRegistration(event)">
+        <div class="name"><input type="text" id="name" name="name" placeholder="Name"></div>
+        <div class="pass"><input type="password" id="password" name="password" placeholder="Password"></div>
+        <div class="ph"><input type="number" id="numb" name="numb" placeholder="Phone Number"></div>
+        <div class="num"><input type="number" id="age" name="age" placeholder="Age"></div>
+        <div class="gn"><input type="text" id="gender" name="gender" placeholder="Gender"></div>
+        <div class="sb"><input type="submit" value="Register"></div>
+    </form>
+
+    <script>
+        function handleRegistration(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Retrieve form field values
+            let name = document.getElementById("name").value;
+            let password = document.getElementById("password").value;
+            let phoneNumber = document.getElementById("numb").value;
+            let age = document.getElementById("age").value;
+            let gender = document.getElementById("gender").value;
+
+            // You can perform additional actions here, like sending the data to a server
+            
+            alert("Registered!"); // Show an alert (you can replace this with your desired functionality)
+        }
+    </script>
+</body>
+</html>
