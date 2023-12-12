@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,500;1,600&display=swap');
+
+*{
+    margin:0%;
+}
+.nava1{
+    background-color: black;    
+    height: 5rem;
+    width:100%;
+    display:flex;
+
+    justify-content: center;
+}
+.Tit{
+    font-family: 'Rethink Sans', sans-serif;
+    text-align: center;
+    padding-top: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+.edge1{
+    background-color: rgb(192, 0, 0);
+    height: 2.5px;
+    width:100%;
+}
+.edge2{
+    background-color: rgb(192, 0, 0);
+    height: 2px;
+    width:100%;
+}
