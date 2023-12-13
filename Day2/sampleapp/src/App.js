@@ -1,10 +1,9 @@
 import './Assets/Style.css' 
 
-import Nav from './Components/Nav'
-
 function App(){
     return(
     <div>
+        <h2>Sign In</h2>
            <form>
            
            <input type="text" name="name" id="name" placeholder="username" class="sam"/>
