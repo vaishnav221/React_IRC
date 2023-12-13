@@ -1,30 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,500;1,600&display=swap');
 
 
-*{
-    margin:0%;
-}
-.nava1{
+.nivi1{
     background-color: black;    
-    height: 5rem;
+    height: 6rem;
     width:100%;
+    color: #fff;
     display:flex;
   /* border: solid 5px rgb(175, 5, 5); */
     justify-content: center;
+    text-decoration: none;
     /* align-items: center; */
 }
-.Tit{
+.Tit h2{
     font-family: 'Rethink Sans', sans-serif;
     align-items: center;
-    padding-top: 1.5rem;
-    color: rgb(255, 255, 255);
+    padding-top: 1rem;
+    color: #fff;
+    padding-top: rem;
+    margin-bottom: 2rem;
 }
 .he1 {
     display: flex;
-    /* width:5rem; */
     justify-content: right;
     gap:20px;
-    align-items:end; 
+    text-decoration: none;
+    align-content:right;
+    padding-bottom:35px;
 }
 .leftr{
     color: black;
@@ -53,7 +55,7 @@ height: 40px;
 color: rgb(255, 255, 255);
 background-color: rgb(185, 0, 0);
 margin-top: 50px;
-border-radius: 50px;
+border-radius: 25px;
 text-align: center;
 }
 .bud1 p{
@@ -83,9 +85,11 @@ text-align: center;
     width:500px;
     height: 40px; 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    justify-content: left;
-    align-items: left;
 }
+/* .mi{
+    background-image: url(https://www.ipodcast.org.uk/wp-content/uploads/2016/01/657-56a175514d65f.jpg);
+    background-size: cover;
+} */
 
 /* .logo1{
     height: 2rem;
@@ -118,4 +122,12 @@ footer{
     height:300px;
     width: 100%;
     margin-top: 40px;
+}
+footer p{
+    color: #fff;
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight:500;
+    margin-left:50px
 }

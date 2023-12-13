@@ -1,20 +1,30 @@
-import {FaBars} from "react-icons/fa";
+import {FaBars} from "react-icons/fa"
+import {Link} from "react-router-dom"
+
+const click=()=>
+{
+    console.log('Your Form is Submitted Successfully');
+}
 
 const Home1=()=>{
     return(
         <>
-        <div className="nava1">   
-            <button className="leftr"><FaBars/></button>
+        <div className="nivi1">   
+        <button className="leftr"><FaBars/></button>
+        {/* <button className="leftr"><FaBars/></button> */}
             <div className="edge2">
                 <div className="Tit">
-                    <h2>Rotors&Wheels</h2>
+                  <h2>Rotors&Wheels</h2>
+                    </div>
         <div className="he1">
-        <a>Sign in </a>
-        <a>Sign Up </a>
-        <a>Location </a>
-        </div></div></div></div>
-        <div className="edge1"></div>
+        <Link to = "/Login">Login </Link>
+        <Link to = "/SignUp">Sign Up</Link>
+        </div>
+        </div>
+        </div>
         
+        <div className="edge1"></div>
+        <div className="mi">
 
         <div className="bud1">
             <span><p>Book a Service For Your Vehicle</p></span>
@@ -76,11 +86,32 @@ const Home1=()=>{
             <input type="text" name="" id="name" placeholder="Service requirements"/>
             </div>
             <div className="in2">
-            <button>Submit</button>
+            <button onSubmit={click}>Submit</button>
             </div>
-
+            </div>
             <footer>
             <div className="edge1"></div>
+            <div>
+                <p>Contact-us:0422-6984576</p>
+            </div>
+            <div>
+                <p>Email:rotors&wheels@gmail.com</p>
+            </div>
+            <div>
+                <p>Legal Disclaimer</p>
+            </div>
+            <div>
+                <p>Dealers and Partners</p>
+            </div>
+            <div>
+                <p>Feedbacks & Reviews</p>
+            </div>
+            <div>
+                <p>Activities Underwent</p>
+            </div>
+            <div>
+                <p>Dealers and Partners</p>
+            </div>
             </footer>
             <div className="edge2"></div>
         </>
