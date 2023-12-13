@@ -1,4 +1,5 @@
-// import logo from "./Assets/Images/fb1.jpg";
+import x1 from '../Assets/Images/x1.png';
+
 const Home=()=>{
     return(
         <>
@@ -6,9 +7,10 @@ const Home=()=>{
             <div className="edge2">
                 <div className="Tit">
                     <h2>Rotors&Wheels</h2>
+
                 </div>
                 <div className="rightl">
-                    {/* <img className="logo1" src={logo} alt="my image"/> */}
+                    <img className="logo1" src={x1} alt="my image"/> 
                 </div>
             </div>
             <h2> </h2>

@@ -8,7 +8,7 @@
     height: 5rem;
     width:100%;
     display:flex;
-
+  border: solid 2px rgb(175, 5, 5);
     justify-content: center;
 }
 .Tit{
@@ -17,7 +17,23 @@
     padding-top: 1.5rem;
     color: rgb(255, 255, 255);
 }
-.edge1{
+.logo1{
+    height: 2rem;
+    width: 2rem; 
+    padding: 60px;
+}
+/* .logo2{
+    height: 2rem;
+    width: 2rem; 
+    align-content: end;
+} */
+.right1{
+    display: flex;
+    align-items: right;
+    padding-right:60px;
+   
+}
+/* .edge1{
     background-color: rgb(192, 0, 0);
     height: 2.5px;
     width:100%;
@@ -26,4 +42,4 @@
     background-color: rgb(192, 0, 0);
     height: 2px;
     width:100%;
-}
+} */
