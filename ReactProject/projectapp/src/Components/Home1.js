@@ -1,9 +1,13 @@
 import {FaBars} from "react-icons/fa"
 import {Link} from "react-router-dom"
 
-const click=()=>
+const click=(e)=>
 {
-    console.log('Your Form is Submitted Successfully');
+    e.preventDefault();
+    alert('Your Form is Submitted Successfully');
+};
+const ton=(e)=>{
+    alert("Logged Out SuccessFully!");
 }
 
 const Home1=()=>{
@@ -15,79 +19,80 @@ const Home1=()=>{
             <div className="edge2">
                 <div className="Tit">
                   <h2>Rotors&Wheels</h2>
+                  <div className="he1">
+        <Link to = "/Login"><li className="linki">Login</li> </Link>
+        <Link to = "/SignUp"><li>Sign Up</li></Link>
+        <li onClick={ton}   
+        >LogOut</li>
+        </div>
                     </div>
-        <div className="he1">
-        <Link to = "/Login">Login </Link>
-        <Link to = "/SignUp">Sign Up</Link>
-        </div>
-        </div>
+            </div>
         </div>
         
-        <div className="edge1"></div>
         <div className="mi">
+        <div className="edge1"></div>
 
         <div className="bud1">
             <span><p>Book a Service For Your Vehicle</p></span>
             <p1>You can book your car for the service by filling up the form below</p1>
         </div>
         <div className="bud2">
-            <form>
+            <form >
             
             <div>
-            <label>Name: </label>
+            {/* <label>Name: </label> */}
             <input type="text" name="" id="name" placeholder="Name"/>
             </div>
             
             <div>
-            <label>EmailId: </label>
+            {/* <label>EmailId: </label> */}
             <input type="text" name="" id="emailid" placeholder="Email_Id"/>
             </div>
             <div>
-            <label>Mobile: </label>
+             {/* <label>Mobile: </label> */}
             <input type="number" name="" id="phone" placeholder="Mobile No"/>
             </div>
             
             <div>
-            <label>Model: </label>
+            {/* <label>Model: </label> */}
             <input type="text" name="" id="name" placeholder="Model"/>
             </div>
             </form>
             <div>
-            <label>Service Type: </label>
+            {/* <label>Service Type: </label> */}
             <input type="text" name="" id="name" placeholder="ServiceType"/>
             </div>
             <div>
-            <label>State: </label>
+            {/* <label>State: </label> */}
             <input type="text" name="" id="name" placeholder="State"/>
             </div>
             <div>
-            <label>City: </label>
+            {/* <label>City: </label> */}
             <input type="text" name="" id="name" placeholder="City"/>
             </div>
             <div>
-            <label>Service Appoinment Date: </label>
+            {/* <label>Service Appoinment Date: </label> */}
             <input type="date" name="" id="name" placeholder="Service Appoinment Date"/>
             </div>
             <div>
-            <label>Service Appoinment Time: </label>
+            {/* <label>Service Appoinment Time: </label> */}
             <input type="time" name="" id="name" placeholder="Service Appoinment Time"/>
             </div>
             <div>
-            <label>Registration No: </label>
+            {/* <label>Registration No: </label> */}
             <input type="text" name="" id="name" placeholder="Registration No"/>
             </div>
             <div>
-            <label>Odometer(km's): </label>
+            {/* <label>Odometer(km's): </label> */}
             <input type="number" name="" id="name" placeholder="Odometer(kms)"/>
             </div>
         </div>
             <div className="in1">
-            <label>Service Requirements: </label>
+            {/* <label>Service Requirements: </label> */}
             <input type="text" name="" id="name" placeholder="Service requirements"/>
             </div>
             <div className="in2">
-            <button onSubmit={click}>Submit</button>
-            </div>
+            <button onClick={click}>Submit</button>
             </div>
             <footer>
             <div className="edge1"></div>
@@ -114,6 +119,7 @@ const Home1=()=>{
             </div>
             </footer>
             <div className="edge2"></div>
+            </div>
         </>
 
     )

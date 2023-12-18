@@ -24,9 +24,16 @@
     display: flex;
     justify-content: right;
     gap:20px;
-    text-decoration: none;
     align-content:right;
     padding-bottom:35px;
+    margin-top: -60px;
+    margin-right: 40px;
+}
+
+.he1 li{
+    text-decoration: none;
+    color: beige;
+    list-style: none;
 }
 .leftr{
     color: black;
@@ -85,11 +92,13 @@ text-align: center;
     width:500px;
     height: 40px; 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
 }
-/* .mi{
-    background-image: url(https://www.ipodcast.org.uk/wp-content/uploads/2016/01/657-56a175514d65f.jpg);
-    background-size: cover;
-} */
+.mi{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/476/773/original/vector-car-service-garage-cartoon-composition-poster.jpg);
+    height: 100%;
+    background-size:310dvh;
+}
 
 /* .logo1{
     height: 2rem;
