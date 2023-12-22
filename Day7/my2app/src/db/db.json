@@ -1,0 +1,24 @@
+{
+    "users":
+    [
+        {
+            "id" : 1,
+            "username" : "Vaishnav",
+            "password":"Vaish2201"
+        },
+        
+        {
+            "id" : 2,
+            "username" : "Poison",
+            "password":"0310"
+
+        }
+    ],
+    "products":
+    [
+        {
+            "pid":1,
+            "productname":"Boost"
+        }
+    ]
+}

@@ -49,6 +49,7 @@
     height: 80px; 
     justify-content: left;
     align-items: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .in1{
     
@@ -57,7 +58,7 @@
     font-weight: 400;
 }
 .in2 button{
-width: 60px;
+width: 100px;
 height: 40px;
 color: rgb(255, 255, 255);
 background-color: rgb(185, 0, 0);
@@ -71,6 +72,7 @@ text-align: center;
     margin-top: 40px;
     font-weight: 600;
     align-items: center;
+    padding-top: 100px;
 }
 .bud1 p1{
     font-family:'Rethink Sans', sans-serif ;
@@ -95,7 +97,9 @@ text-align: center;
     font-size: medium;
 }
 .mi{
-    background-image: url(https://static.vecteezy.com/system/resources/previews/000/476/773/original/vector-car-service-garage-cartoon-composition-poster.jpg);
+    background: #40050b;
+    background: -webkit-linear-gradient(to right, #9b0c0c, #900303); 
+    background: linear-gradient(to right, #562828, #901a1a); 
     height: 100%;
     background-size:310dvh;
 }
@@ -127,16 +131,25 @@ text-align: center;
     width:100%;
 }
 footer{
-    background-color: black;
-    height:300px;
+    background-color: rgb(11, 11, 11);
+    height:150px;
     width: 100%;
     margin-top: 40px;
+    padding-top:25px;
+    padding-left: 150px;
 }
 footer p{
-    color: #fff;
+    color: grey;
     display:flex;
-    justify-content: center;
+    
+    flex-direction: column;
+    font-family:  Geneva, Verdana, sans-serif;
     gap: 20px;
     font-weight:500;
+    /* padding-top: 25px; */
     margin-left:50px
+}
+.parent {
+    display: flex;
+    flex-direction: row;
 }

@@ -1,3 +1,4 @@
+import React from 'react';
 import {Link} from 'react-router-dom'
 
 function register(){
@@ -33,19 +34,19 @@ const Signin=()=>{
         <form className="fl1" >
         <div className="hed">Sign Up
            
-           <input type="text" name="name" id="name" placeholder="username" class="sem"/>
+           <input type="text" name="name" id="name" placeholder="username" class="sem" required/>
           
-           <input type="email" name="email" id="email" placeholder="email address" class="sem"/>
+           <input type="email" name="email" id="email" placeholder="email address" class="sem" required/>
           
-           <input type="number" name="phone" id="mobile" placeholder="mobile" class="sem"/>
+           <input type="number" name="phone" id="mobile" placeholder="mobile" class="sem" required/>
      
-           <input type="date" name="dob" id="dob" class="sam"/>
+           <input type="date" name="dob" id="dob" class="sam" required/>
      
-           <input type="password" name="pass" id="pass" placeholder="password" class="sem"/>
-           <input type="password" name="pass1" id="pass1" placeholder="confirm password" class="sem"/>
+           <input type="password" name="pass" id="pass" placeholder="password" class="sem" required/>
+           <input type="password" name="pass1" id="pass1" placeholder="confirm password" class="sem" required/>
 
            </div>
-           <Link to='/'>
+           <Link to='/home'>
            <input onSubmit={register} type="submit" value="Submit" class="seem"/></Link>
            </form>
     </div>

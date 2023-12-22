@@ -2,14 +2,18 @@
 
 .gre{
     background: #40050b;
-    background: -webkit-linear-gradient(to right, #000000, #900303); 
-    background: linear-gradient(to right, #000000, #901a1a); 
+    background: -webkit-linear-gradient(to right, #9b0c0c, #900303); 
+    background: linear-gradient(to right, #562828, #901a1a); 
    display: flex;
    justify-content: center;
    flex-direction: column;
    align-items: center;
    height: 100vh;
    width: 100vw;
+}
+.yakuza{
+    color:grey;
+    padding-top: 10px;
 }
 .container {
 height:40vh;

@@ -13,22 +13,7 @@ const ton=(e)=>{
 const Home1=()=>{
     return(
         <>
-        <div className="nivi1">   
-        <button className="leftr"><FaBars/></button>
-        {/* <button className="leftr"><FaBars/></button> */}
-            <div className="edge2">
-                <div className="Tit">
-                  <h2>Rotors&Wheels</h2>
-                  <div className="he1">
-        <Link to = "/Login"><li className="linki">Login</li> </Link>
-        <Link to = "/SignUp"><li>Sign Up</li></Link>
-        <li onClick={ton}   
-        >LogOut</li>
-        </div>
-                    </div>
-            </div>
-        </div>
-        
+
         <div className="mi">
         <div className="edge1"></div>
 
@@ -95,7 +80,7 @@ const Home1=()=>{
             <button onClick={click}>Submit</button>
             </div>
             <footer>
-            <div className="edge1"></div>
+            <div className="parent">   
             <div>
                 <p>Contact-us:0422-6984576</p>
             </div>
@@ -111,14 +96,12 @@ const Home1=()=>{
             <div>
                 <p>Feedbacks & Reviews</p>
             </div>
+            <br/>
             <div>
                 <p>Activities Underwent</p>
             </div>
-            <div>
-                <p>Dealers and Partners</p>
-            </div>
+            </div> 
             </footer>
-            <div className="edge2"></div>
             </div>
         </>
 
